@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript">
     function DetectTheThing()
     {
@@ -10,10 +11,20 @@
           window.location.replace('https://maxutkoe.github.io/gameyup/'); // Нет возможности вернуться
     }
 </script>
-
+<style>
+    .fixpixel img{
+height: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ }
+</style>
 </head>
 
-<body onload="DetectTheThing()" style="background-image: url('qrback.png')">
+<body onload="DetectTheThing()">
+    <div class="fixpixel">
+        <img src="qrback.png" />
+    </div>
 </body>
 
 </html>
